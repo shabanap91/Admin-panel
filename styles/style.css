@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root{
+    --main-color: #027581;
+    --color-dark: #1D2231;
+    --text-gray: #8390A2;
+}
+
+*{
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: var(--main-color);
+    color: #fff;
+    overflow-y: auto;
+}
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0rem 1rem;
+}
+.idebar-menu{
+    padding: 1rem;
+}
+.sidebar li{
+    margin-bottom: 1.2rem;
+}
+.sidebar a{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.sidebar a span:last-child{
+    padding-left: 0rem .6rem;
+}
+.main-content{
+    position: relative;
+    margin-left: 240px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 240px;
+    z-index: 100;
+    width: calc(100% - 240px);
+    background: #fff;
+    height: 60px;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+
+}
+.search-wrapper input{
+    border: 0;
+    outline: 0;
+    padding: 1.5rem;
+    height: 38px;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    
+}
+.social-icons span,
+.social-icons div{
+    margin-left: 1.2rem;
+}
+.social-icons div{
+    height: 58px;
+    width: 58px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/girl.jpeg);
+    border-radius: 50%;
+}
+main{
+    margin-top: 60px;
+    background: #f1f5f9;
+    min-height: 100vh;
+    padding: 1rem 3rem;
+}
+.dash-title{
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+.dashboard-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 3rem;
+}
+.card-single{
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0,0.2);
+}
+.card-body{
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+}
+.card-body span{
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1.4rem;
+}
+.card-body h5{
+    color: var(--text-gray);
+    font-size: 2rem;
+}
+.card-body h4{
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    margin-top: .2rem;
+}
+.card-footer{
+    padding: .2rem 1rem;
+    background-color: var(--main-color);
+}
